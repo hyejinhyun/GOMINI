@@ -10,17 +10,17 @@ import com.bumptech.glide.Glide;
 
 import java.util.*;
 
-public class MyListAdapter extends BaseAdapter {
+public class ListviewAdapter extends BaseAdapter {
     Context context;
-    ArrayList<list_item> list_itemArrayList;
+    ArrayList<Listviewitem> list_itemArrayList;
     ViewHolder viewholder;
 
     class ViewHolder{
         TextView content_textView;
-        ImageView profile_imageView;
+        ImageView imageView;
     }
 
-    public MyListAdapter(Context context, ArrayList<list_item> list_itemArrayList) {
+    public ListviewAdapter(Context context, ArrayList<Listviewitem> list_itemArrayList) {
         this.context = context;
         this.list_itemArrayList = list_itemArrayList;
     }
@@ -47,7 +47,7 @@ public class MyListAdapter extends BaseAdapter {
 
             viewholder = new ViewHolder();
             viewholder.content_textView = (TextView) convertView.findViewById(R.id.content_textView);
-            viewholder.profile_imageView = (ImageView) convertView.findViewById(R.id.profile_imageView);
+            viewholder.imageView = (ImageView) convertView.findViewById(R.id.imageView);
             convertView.setTag(viewholder);
         }
 
@@ -55,8 +55,10 @@ public class MyListAdapter extends BaseAdapter {
             viewholder = (ViewHolder)convertView.getTag();
         }
 
+        Listviewitem listviewitem = list_itemArrayList.get(position);
+
         viewholder.content_textView.setText(list_itemArrayList.get(position).getContent());
-        Glide.with(context).load(list_itemArrayList.get(position).getProfile_image()).into(viewholder.profile_imageView);
+        Glide.with(context).load(list_itemArrayList.get(position).getImage()).into(viewholder.imageView);
 
         return convertView;
     }

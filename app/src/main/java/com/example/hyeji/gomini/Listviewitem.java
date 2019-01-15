@@ -3,17 +3,16 @@ package com.example.hyeji.gomini;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class list_item extends AppCompatActivity {
-
-    private String profile_image;
+public class Listviewitem extends AppCompatActivity {
+    private String image;
     private String content;
 
-    public String getProfile_image() {
-        return profile_image;
+    public String getImage() {
+        return image;
     }
 
-    public void setProfile_image(String profile_image) {
-        this.profile_image = profile_image;
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public String getContent() {
@@ -24,8 +23,8 @@ public class list_item extends AppCompatActivity {
         this.content = content;
     }
 
-    public list_item(String profile_image, String content) {
-        this.profile_image = profile_image;
+    public Listviewitem(String image, String content) {
+        this.image = image;
         this.content = content;
     }
 
