@@ -35,9 +35,6 @@ public class ListviewActivity extends AppCompatActivity {
                 new Listviewitem("https://lh3.googleusercontent.com/tFmThxmmtB2dSVed-0RLZLQfbvD90sh_HoX4VLmIAPG4NRzPbw0DfLZUdzSZpbtrhO3QO04hOq91ttXX-1upNO0eOcMashzMhiiay2a4PYuXnwgoGV1THP5-wMslbOHChF3iUCBrgA3hx3VNbu5xAcVe-yEH3g6RRKMrwJh6otqgybrYn9CV-gZwFtwOS3lQQCmNhmpZXIrdIFiSlM3UDa63STcXM28z-n-ICVqHHvJaZpmHInYxoQaJuIL6bubLUIRfst0hscrvj_qqG1GQ5ILddbrU0V1-gIWeSCNbE7QQAzFiTQVhfe2AN7mKCBlFl3JiEIeYQz0IiJ3Wgus0NhRcYqMRT6-CkWB2DZmoboJHflhaEKzL5gvEiGlk5cVWgQKpCMUKPpaN5aqk9YcDMBcPurVeBBgJSH_GUm5VpqAX8EnrP2UTEHR498ycA-uKSOy-q2ol-aiipp36705DFLtYltbk3tWnwLVUExTkpa_qPHS3RmmDGSpCYwiZ-cGMXefO9BdKok_qhcbjQfz-0Xh4RklNPG0son22Bv_4UJSIBUAgpLOFBPWh4FXfHs1I5Z11sDaiz3Xk1oTwZvFaRLGMKTQdDlQON51DPTPyF5h3ARC_h6NWHX85chmYucawLNUWpb7IR6h897KLew=w828-h552-no",
                         "시작한 이상 끝은 생각하지 말자."));
 
-
-
-
         myListAdapter = new ListviewAdapter(this,list_itemArrayList);
         listView.setAdapter(myListAdapter);
     }
